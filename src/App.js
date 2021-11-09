@@ -4,10 +4,12 @@ import Api from "./api"
 
 export default () => {
 
+  const [useProjectList, setProjectList] = useState([]);
+
   useEffect(() => {
     const loadApi = async () => {
       let list = await Api.getHomeList();
-      // console.log(list);
+      setProjectList(list);
     }
 
     loadApi();
