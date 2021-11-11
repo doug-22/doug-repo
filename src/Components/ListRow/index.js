@@ -10,7 +10,7 @@ const ListRow = ({title, items}) => {
                 <div className="listRow-list">
                     {items.length > 0 && items.map((item, key) => (
                         <div key={key} className="listRow-item">
-                            <img src={item.capa || item.imagem} alt={item.titulo}/>
+                            <img src={item.imagem} alt={item.titulo}/>
                         </div>
                     ))}
                 </div>
