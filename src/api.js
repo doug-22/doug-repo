@@ -8,9 +8,15 @@ const Api = async (endpoint) => {
 
 export default {
     getHomeList: async () => {
-        return {
+        return [
+            {
             title: "Projetos",
             items: await Api(`projetos`)
+        },
+        {
+            title: "Certificados",
+            items: await Api(`certificados`)
         }
+    ]
     }
 }
