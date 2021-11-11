@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Api from "./api"
+import React from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
+import Home from "./Pages/Home";
 
-export default () => {
-
-  const [useProjectList, setProjectList] = useState([]);
-
-  useEffect(() => {
-    const loadApi = async () => {
-      let list = await Api.getHomeList();
-      setProjectList(list);
-    }
-
-    loadApi();
-  }, []);
+export default function App() {
 
   return (
-    <div>
-      Olá Mundo!
-    </div>
+    <BrowserRouter>
+            <Routes>
+                <Route path="/home" element={< Home/>} />
+            </Routes>   
+        </BrowserRouter>
   );
 }
