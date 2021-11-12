@@ -62,3 +62,8 @@
     background-color: #333;
     color: #fff;
 }
+
+.featured-icon-button{
+    margin-bottom: -3px;
+    margin-right: 5px;
+}

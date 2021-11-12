@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFillPlayFill, BsInfoCircle } from "react-icons/bs"
 import "./style.css";
 
 const FeaturedProject = ({item}) => {
@@ -15,8 +16,8 @@ const FeaturedProject = ({item}) => {
                         {item.descricao}
                     </div>
                     <div className="featured-buttons">
-                        <a className="featured-watch-button" href="">Acessar</a>
-                        <a className="featured-moreinfo-button" href="">Mais Informações</a>
+                        <a className="featured-watch-button" href={item.link} target="_blank" rel="noreferrer"><BsFillPlayFill className="featured-icon-button"/>Acessar</a>
+                        <a className="featured-moreinfo-button" href=""><BsInfoCircle className="featured-icon-button"/> Mais Informações</a>
                     </div>
                 </div>
             </div>
