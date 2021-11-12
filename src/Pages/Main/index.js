@@ -16,13 +16,13 @@ const Main = () => {
                     <p>Gerenciar acesso:</p>
                 </div>
                 <div className="main-bottons-access">
-                    <Link to="home" className="home-buttom-link">
+                    <Link to="/home" className="home-buttom-link">
                         <div className="home-buttom">
                             <MdOutlineHome />
                         </div>
                         Home
                     </Link>
-                    <Link to="" className="perfil-buttom-link">
+                    <Link to="/perfil" className="perfil-buttom-link">
                         <div className="perfil-buttom">
                             <MdPersonOutline />
                         </div>

@@ -14,7 +14,7 @@ const Header = ({black}) => {
                 </Link>
             </div>
             <div className="header-user">
-                <Link to="/" className="teste">
+                <Link to="/perfil" className="teste">
                     <div className="user-buttom">
                         <MdPersonOutline />
                     </div>
