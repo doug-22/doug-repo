@@ -1,0 +1,70 @@
+.main-header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+
+    background: linear-gradient(to top, rgb(27, 27, 27), #000);
+}
+
+.main-header img{
+    width: 150px;
+}
+
+.main-buttons {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background: linear-gradient(to top, #000, rgb(27, 27, 27));
+}
+
+p {
+    font-size: 30px;
+}
+
+.main-bottons-access {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.home-buttom-link, .perfil-buttom-link {
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-buttom-link:hover, .perfil-buttom-link:hover {
+    color: #fff;
+}
+
+.home-buttom, .perfil-buttom {
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    font-size: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-buttom {
+    background: linear-gradient(to top, #e0a401, #f2d602);
+}
+
+.perfil-buttom {
+    background: linear-gradient(to top, rgb(9, 170, 154), turquoise);
+}
+
+.home-buttom:hover, .perfil-buttom:hover {
+    border: solid 3px #fff;
+}
