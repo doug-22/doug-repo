@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react"
 import "./style.css"
 import Api from "../../api"
+
 import ListRow from "../../Components/ListRow"
 import FeaturedProject from "../../Components/FeaturedProject"
+import Header from "../../Components/Header"
 
 const Home = () => {
 
     const [projectList, setProjectList] = useState([]);
     const [featuredData, setFeaturedData] = useState(null);
+    const [blackHeader, setBlackHeader] = useState(false);
 
     useEffect(() => {
         const loadApi = async () => {
@@ -30,8 +33,26 @@ const Home = () => {
         loadApi();
     }, []);
 
+    useEffect(() => {
+        const scrollListener = () => {
+            if(window.scrollY > 20){
+                setBlackHeader(true);
+            } else {
+                setBlackHeader(false);
+            }
+        }
+
+        window.addEventListener("scroll", scrollListener);
+        
+        return () => {
+            window.removeEventListener("scroll", scrollListener);
+        }
+    }, []);
+
     return (
         <div className="page">
+
+            <Header black={blackHeader}/>
             
             {featuredData &&
             <FeaturedProject item={featuredData}/>
