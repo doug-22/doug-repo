@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { FaGithub } from "react-icons/fa"
 import "./style.css"
 import Api from "../../api"
 
@@ -63,6 +64,11 @@ const Home = () => {
                     <ListRow key={key} title={item.title} items={item.items}/>
                 ))}
             </section>
+
+            <footer>
+                Desenvolvido por <a href="https://github.com/doug-22" target="_blank" rel="noreferrer">Douglas Oliveira <FaGithub /></a><br/>
+                Layout baseado na Netflix<br/>
+            </footer>
         </div>        
     );
 }
