@@ -21,7 +21,7 @@ header.black{
     width: 150px;
 }
 
-.user-buttom {
+.user-buttom-perfil {
     width: 35px;
     height: 35px;
     background: linear-gradient(to top, rgb(9, 170, 154), turquoise);
@@ -34,4 +34,23 @@ header.black{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.user-buttom-home {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(to top, #e0a401, #f2d602);
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-buttom-home:hover, .user-buttom-perfil:hover {
+    border: solid 2px #fff;
 }

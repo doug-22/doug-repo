@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import {useLocation} from "react-router-dom"
 import { FaGithub } from "react-icons/fa"
 import "./style.css"
 import Api from "../../api"
@@ -50,10 +51,12 @@ const Home = () => {
         }
     }, []);
 
+    let location = useLocation();
+
     return (
         <div className="page">
 
-            <Header black={blackHeader}/>
+            <Header black={blackHeader} pageLocation={location.pathname}/>
             
             {featuredData &&
             <FeaturedProject item={featuredData}/>
