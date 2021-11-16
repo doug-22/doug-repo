@@ -72,6 +72,12 @@ const Home = () => {
                 Desenvolvido por <a href="https://github.com/doug-22" target="_blank" rel="noreferrer">Douglas Oliveira <FaGithub /></a><br/>
                 Layout baseado na Netflix<br/>
             </footer>
+
+            {projectList.length <= 0 &&
+                <div className="loading">
+                    <img src="https://www.rchandru.com/images/portfolio/loading.gif" alt="Carregando" width="100"/>
+                </div>
+            }
         </div>        
     );
 }

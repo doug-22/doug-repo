@@ -5,7 +5,7 @@ import "./style.css"
 
 const ListRow = ({title, items}) => {
 
-    const [scrollX, setScrollX] = useState(-270);
+    const [scrollX, setScrollX] = useState(0);
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);
