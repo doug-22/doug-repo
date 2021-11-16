@@ -11,8 +11,8 @@
     padding-left: 30px;
 }
 
-.listRow-list{
-    width: 9999999px;
+.listRow-list {
+    transition: all ease 0.5s;
 }
 
 .listRow-item {
@@ -29,4 +29,33 @@
 
 .listRow-item img:hover{
     transform: scale(1);
+}
+
+.listRow-left, .listRow-right {
+    position: absolute;
+    width: 40px;
+    height: 195px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.listRow-left {
+    left: 0;
+}
+
+.listRow-right {
+    right: 0;
+}
+
+.listRow:hover .listRow-left, .listRow:hover .listRow-right {
+    opacity: 1;
 }
