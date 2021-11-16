@@ -67,3 +67,22 @@
     margin-bottom: -3px;
     margin-right: 5px;
 }
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+    .featured-name {
+        font-size: 40px;
+    }
+    .featured-description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+        color: rgb(202, 202, 202);
+    }
+    .featured-watch-button, .featured-moreinfo-button {
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+}

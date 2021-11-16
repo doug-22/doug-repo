@@ -170,6 +170,10 @@ body{
     margin-right: 10px;
 }
 
+.perfil-experience-description {
+    text-align: justify;
+}
+
 .perfil-education-div div{
     width: 100%;
 }
@@ -245,4 +249,53 @@ footer {
 footer a{
     text-decoration: none;
     color: #FFF;
+}
+
+@media (max-width: 760px) {
+    .perfil-foto div{
+        font-size: 12px;
+    }
+    .perfil-foto img {
+        width: 80px;
+    }
+    .perfil-about {
+        width: 90vw;
+    }
+    .perfil-contacts {
+        width: 70%;
+    }
+    .perfil-skills-icons {
+        width: 90%;
+    }
+    .perfil-skills-icons img {
+        width: 40px;
+    }
+    .perfil-experience, .perfil-education {
+        width: 100%;
+    }
+    .perfil-experience-div, .perfil-education-div {
+        width: 90%;
+    }
+    .perfil-experience-description, .perfil-education-description {
+        font-size: 14px;
+    }
+    .perfil-data{
+        font-size: 12px;
+    }
+    .perfil-titulo{
+        font-size: 16px;
+    }
+    .perfil-experience-div div {
+        width: 85%;
+    }
+    .perfil-data-experience {
+        width: 40%;
+    }
+    .perfil-experience-ping {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    .perfil-download-button {
+        font-size: 16px;
+    }
 }

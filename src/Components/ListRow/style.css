@@ -59,3 +59,9 @@
 .listRow:hover .listRow-left, .listRow:hover .listRow-right {
     opacity: 1;
 }
+
+@media (max-width: 760px) {
+    .listRow-left, .listRow-right {
+        opacity: 1;
+    }
+}

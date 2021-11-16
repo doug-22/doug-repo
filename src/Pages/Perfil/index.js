@@ -44,7 +44,7 @@ const Perfil = () => {
                 <img src={logoPerfil} alt="Perfil"/>
                 <div>
                     <span>Oi, eu sou o</span>
-                    <h1>Douglas Oliveira</h1>
+                    <h1>Douglas</h1>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@ const Perfil = () => {
             <div className="perfil-experience">
                 <h2>Experiência</h2>
                 <div className="perfil-experience-div">
-                    <span className="perfil-data">Janeiro 2017 - Dezembro 2019</span>
+                    <span className="perfil-data perfil-data-experience">Jan 2017 - Dez 2019</span>
                     <FaMapMarkerAlt className="perfil-experience-ping"/>
                     <div>
                         <div className="perfil-titulo">Bolsista</div>
@@ -88,11 +88,11 @@ const Perfil = () => {
                             <img src={logoUFMA} alt="Logo UFMA" />
                             <span>UFMA</span>
                         </div>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-experience-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                     </div>
                 </div>
                 <div className="perfil-experience-div">
-                    <span className="perfil-data">Junho 2021 - Até o momento</span>
+                    <span className="perfil-data perfil-data-experience">Jun 2021 - Até o momento</span>
                     <FaMapMarkerAlt className="perfil-experience-ping"/>
                     <div>
                         <div className="perfil-titulo">Desenvolvedor Front-End</div>
@@ -100,7 +100,7 @@ const Perfil = () => {
                             <img src={logoUNASUS} alt="Logo UNASUS" />
                             <span>UNA-SUS</span>
                         </div>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-experience-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                     </div>
                 </div>
             </div>
