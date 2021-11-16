@@ -11,6 +11,9 @@ import logoCss from "../../Assets/logo-css.png"
 import logoJs from "../../Assets/logo-js.png"
 import logoReact from "../../Assets/logo-react.png"
 import logoTs from "../../Assets/logo-ts.png"
+import iconMedal from "../../Assets/medalha-de-ouro.png"
+import logoUNASUS from "../../Assets/logo_vertical.png"
+import logoUFMA from "../../Assets/ufma.png"
 
 const Perfil = () => {
 
@@ -57,20 +60,20 @@ const Perfil = () => {
             </div>
 
             <div className="perfil-contacts">
-                <FaGithub />
-                <FaLinkedin />
-                <FaInstagram />
-                <FaRegEnvelope />
+                <a href="https://github.com/doug-22" target="_blank" rel="noreferrer"><FaGithub className="perfil-contacts-github"/></a>
+                <a href="https://www.linkedin.com/in/douglas-oliveira-dev/" target="_blank" rel="noreferrer"><FaLinkedin className="perfil-contacts-linkedin"/></a>
+                <a href="mailto:douglas.aguiar410@gmail.com" target="_blank" rel="noreferrer"><FaRegEnvelope className="perfil-contacts-gmail"/></a>
+                <a href="https://www.instagram.com/d__oliveiraa/" target="_blank" rel="noreferrer"><FaInstagram className="perfil-contacts-instagram"/></a>
             </div>
 
             <div className="perfil-skills">
                 <h2>Skills</h2>
                 <div className="perfil-skills-icons">
-                    <img src={logoHtml} alt="Logo HTML"/>
-                    <img src={logoCss} alt="Logo CSS"/>
-                    <img src={logoJs} alt="Logo JS"/>
-                    <img src={logoReact} alt="Logo React"/>
-                    <img src={logoTs} alt="Logo TS"/>
+                    <img src={logoHtml} alt="Logo HTML" className="perfil-skills-animation"/>
+                    <img src={logoCss} alt="Logo CSS" className="perfil-skills-animation"/>
+                    <img src={logoJs} alt="Logo JS" className="perfil-skills-animation"/>
+                    <img src={logoReact} alt="Logo React" className="perfil-skills-animation"/>
+                    <img src={logoTs} alt="Logo TS" className="perfil-skills-animation"/>
                 </div>
             </div>
 
@@ -81,16 +84,22 @@ const Perfil = () => {
                     <FaMapMarkerAlt className="perfil-experience-ping"/>
                     <div>
                         <div className="perfil-titulo">Bolsista</div>
-                        <span>UFMA</span>
+                        <div className="perfil-experience-logo">
+                            <img src={logoUFMA} alt="Logo UFMA" />
+                            <span>UFMA</span>
+                        </div>
                         <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                     </div>
                 </div>
                 <div className="perfil-experience-div">
-                    <span className="perfil-data">Janeiro 2021 - Até o momento</span>
+                    <span className="perfil-data">Junho 2021 - Até o momento</span>
                     <FaMapMarkerAlt className="perfil-experience-ping"/>
                     <div>
                         <div className="perfil-titulo">Desenvolvedor Front-End</div>
-                        <span>UNA-SUS</span>
+                        <div className="perfil-experience-logo">
+                            <img src={logoUNASUS} alt="Logo UNASUS" />
+                            <span>UNA-SUS</span>
+                        </div>
                         <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                     </div>
                 </div>
@@ -100,24 +109,39 @@ const Perfil = () => {
                 <h2>Educação</h2>
                 <div className="perfil-education-div">
                     <div>
-                        <div className="perfil-titulo">Universidade Federal do Maranhão</div>
-                        <span>Bacharelado em Ciência e Tecnologia</span>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-education-info">
+                            <div>
+                                <div className="perfil-titulo">Universidade Federal do Maranhão</div>
+                                <span>Bacharelado em Ciência e Tecnologia</span>
+                            </div>
+                            <span className="perfil-data">Mar 2017 - Out 2021</span>
+                        </div>
+                        <div className="perfil-education-description">No curso, construí bases de conhecimento para as engenharias em geral. Desenvolvi conhecimentos introdutórios a Engenharia da Computação, como Fundamentos e Lógica de Programação, Algoritmos, Banco de Dados, Sistemas Operacionais, Processos de Desenvolvimentos de Softwares e Metodologias Ágeis.
+                            <div className="perfil-education-tcc"><img src={iconMedal} alt="Medalha" width="25"/><div><strong>TCC:</strong><em> Identificando e Disponibilizando Técnicas de Gamificação para o Ensino de Engenharia de Software</em></div></div>
+                        </div>
                     </div>
-                    <span className="perfil-data">Mar 2017 - Out 2021</span>
+                    
                 </div>
                 <div className="perfil-education-div">
                     <div>
-                        <div className="perfil-titulo">Universidade Federal do Maranhão</div>
-                        <span>Bacharelado em Engenharia da Computação</span>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-education-info">
+                            <div>
+                                <div className="perfil-titulo">Universidade Federal do Maranhão</div>
+                                <span>Bacharelado em Engenharia da Computação</span>
+                            </div>
+                            <span className="perfil-data">Nov 2021 - Cursando</span>
+                        </div>
+                        <div className="perfil-education-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                     </div>
-                    <span className="perfil-data">Nov 2021 - Cursando</span>
                 </div>
             </div>
 
             <a href="" target="_blank" rel="noreferrer" className="perfil-download-button"><FaFileDownload className="perfil-icon-button"/>Download Currículo</a>
 
+            <footer>
+                Desenvolvido por Douglas Oliveira<br/>
+                Layout baseado na Netflix<br/>
+            </footer>
         </div>
     );
 }
