@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"
 import "./style.css"
 
+import ItemList from "../ItemList"
+
 
 const ListRow = ({title, items}) => {
 
@@ -24,8 +26,6 @@ const ListRow = ({title, items}) => {
         setScrollX(x);
     }
 
-    console.log(items.length)
-
     return (
         <div className="listRow">
             <h2>{title}</h2>
@@ -44,9 +44,7 @@ const ListRow = ({title, items}) => {
                     width: 8 * 270
                 }}>
                     {items.length > 0 && items.map((item, key) => (
-                        <div key={key} className="listRow-item">
-                            <img src={item.imagem} alt={item.titulo}/>
-                        </div>
+                        <ItemList key={key} item={item}/>
                     ))}
                 </div>
             </div>

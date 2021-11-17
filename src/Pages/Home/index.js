@@ -23,7 +23,7 @@ const Home = () => {
 
             //pega o destaque
             let projetos = list.filter(i=>i.title === "Projetos");
-            console.log(projetos);
+            // console.log(projetos);
             let randomChosen = Math.floor(Math.random() * (projetos[0].items.length - 1));
             let chosen = projetos[0].items[randomChosen];
             setFeaturedData(chosen);

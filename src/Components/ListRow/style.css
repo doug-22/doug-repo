@@ -15,22 +15,6 @@
     transition: all ease 0.5s;
 }
 
-.listRow-item {
-    display: inline-block;
-    width: 300px;
-    cursor: pointer;
-}
-
-.listRow-item img{
-    width: 100%;
-    transform: scale(0.9);
-    transition: all ease 0.2s;
-}
-
-.listRow-item img:hover{
-    transform: scale(1);
-}
-
 .listRow-left, .listRow-right {
     position: absolute;
     width: 40px;
