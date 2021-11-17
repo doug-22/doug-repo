@@ -1,0 +1,15 @@
+.itemlist-item {
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+}
+
+.itemlist-item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.itemlist-item img:hover{
+    transform: scale(1);
+}
