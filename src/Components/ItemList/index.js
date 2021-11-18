@@ -10,7 +10,7 @@ const ItemList = ({item}) => {
     return (
         <div className="itemlist-item" >                 
             <img src={item.imagem} alt={item.titulo} onClick={() => setModalVisible(true)}/>
-            {modalVisible ? <Modal itemModal={item} /> : null}
+            {modalVisible ? <Modal itemModal={item} onClose={() => setModalVisible(false)}/> : null}
         </div>
     )
 }
