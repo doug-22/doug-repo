@@ -19,5 +19,23 @@ export default {
             items: await Api(`certificados`)
         }
     ]
+    },
+    getProjectInfo: async (projectId, type) => {
+        let info = {};
+
+        if(projectId){
+            switch (type) {
+                case "projeto":
+                        info = await Api(`projeto/${projectId}`);
+                    break;
+                case "certificado":
+                        info = await Api(`certificado/${projectId}`);
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+        return info;
     }
 }
