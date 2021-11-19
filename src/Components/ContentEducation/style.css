@@ -1,0 +1,84 @@
+
+@keyframes change {
+    0% {
+        border: solid 1px #fff;
+    }
+    50% {
+        border: solid 1px rgb(37, 37, 37);
+    }
+    100% {
+        border: solid 1px #fff;
+    }
+}
+
+.perfil-education-div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    animation-name: change;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.perfil-education-div div{
+    width: 100%;
+}
+
+.perfil-education-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perfil-education-info div {
+    width: auto;
+}
+
+.perfil-education-description {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.perfil-education-tcc {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.perfil-education-tcc img{
+    margin-right: 10px;
+}
+
+span{
+    color: rgb(114, 114, 114);
+}
+
+.perfil-data {
+    font-size: 15px;
+}
+
+.perfil-titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 760px) {
+    .perfil-education-div {
+        width: 90%;
+    }
+    .perfil-education-description {
+        font-size: 14px;
+    }
+    .perfil-data{
+        font-size: 12px;
+    }
+    .perfil-titulo{
+        font-size: 16px;
+    }
+}
