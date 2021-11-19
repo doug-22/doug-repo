@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
 import {useLocation} from "react-router-dom"
-import { FaGithub, FaLinkedin, FaInstagram, FaRegEnvelope, FaWhatsapp, FaMapMarkerAlt, FaEye } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram, FaRegEnvelope, FaWhatsapp, FaEye } from "react-icons/fa"
 import "./style.css"
 
 import Header from "../../Components/Header"
+import ContentEducation from "../../Components/ContentEducation";
+import ContentExperience from "../../Components/ContentExperience";
 
 import logoHtml from "../../Assets/logo-html5.png"
 import logoCss from "../../Assets/logo-css.png"
@@ -80,62 +82,46 @@ const Perfil = () => {
 
             <div className="perfil-experience">
                 <h2>Experiência</h2>
-                <div className="perfil-experience-div">
-                    <span className="perfil-data perfil-data-experience">Jan 2018 - Dez 2019</span>
-                    <FaMapMarkerAlt className="perfil-experience-ping"/>
-                    <div>
-                        <div className="perfil-titulo">Bolsista</div>
-                        <div className="perfil-experience-logo">
-                            <img src={logoUFMA} alt="Logo UFMA" />
-                            <span>UFMA</span>
-                        </div>
-                        <div className="perfil-experience-description">Responsável pela liquidação de despesas e despacho de documentos.</div>
-                    </div>
-                </div>
-                <div className="perfil-experience-div">
-                    <span className="perfil-data perfil-data-experience">Jun 2021 - Até o momento</span>
-                    <FaMapMarkerAlt className="perfil-experience-ping"/>
-                    <div>
-                        <div className="perfil-titulo">Desenvolvedor Front-End</div>
-                        <div className="perfil-experience-logo">
-                            <img src={logoUNASUS} alt="Logo UNASUS" />
-                            <span>UNA-SUS</span>
-                        </div>
-                        <div className="perfil-experience-description">O Sistema Universidade Aberta do SUS (UNA-SUS) foi criado com o objetivo auxiliar na capacitação e educação dos profissionais que atuam no Sistema Único de Saúde (SUS). 
-                        Dentro da UNA-SUS atuo no desenvolvimento de recursos educacionais utilizando React, HTML, CSS e Javascript.</div>
-                    </div>
-                </div>
+
+                <ContentExperience 
+                    data={<>Jan 2018 - Dez 2019</>}
+                    titulo={<>Bolsista</>}
+                    logo={logoUFMA}
+                    instituicao={<>UFMA</>}
+                    descricao={<>Responsável pela liquidação de despesas e despacho de documentos.</>}
+                />
+
+                <ContentExperience 
+                    data={<>Jun 2021 - Até o momento</>}
+                    titulo={<>Desenvolvedor Front-End</>}
+                    logo={logoUNASUS}
+                    instituicao={<>UNA-SUS</>}
+                    descricao={<>O Sistema Universidade Aberta do SUS (UNA-SUS) foi criado com o objetivo auxiliar na capacitação e educação dos profissionais que atuam no Sistema Único de Saúde (SUS). 
+                        Dentro da UNA-SUS atuo no desenvolvimento de recursos educacionais utilizando React, HTML, CSS e Javascript.</>}
+                />
             </div>
 
             <div className="perfil-education">
                 <h2>Educação</h2>
-                <div className="perfil-education-div">
-                    <div>
-                        <div className="perfil-education-info">
-                            <div>
-                                <div className="perfil-titulo">Universidade Federal do Maranhão</div>
-                                <span>Bacharelado em Ciência e Tecnologia</span>
-                            </div>
-                            <span className="perfil-data">Mar 2017 - Out 2021</span>
-                        </div>
-                        <div className="perfil-education-description">No curso, construí bases de conhecimento para as engenharias em geral. Desenvolvi conhecimentos introdutórios a Engenharia da Computação, como Fundamentos e Lógica de Programação, Algoritmos, Banco de Dados, Sistemas Operacionais, Processos de Desenvolvimentos de Softwares e Metodologias Ágeis.
-                            <div className="perfil-education-tcc"><img src={iconMedal} alt="Medalha" width="25"/><div><strong>TCC:</strong><em> Identificando e Disponibilizando Técnicas de Gamificação para o Ensino de Engenharia de Software</em></div></div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="perfil-education-div">
-                    <div>
-                        <div className="perfil-education-info">
-                            <div>
-                                <div className="perfil-titulo">Universidade Federal do Maranhão</div>
-                                <span>Bacharelado em Engenharia da Computação</span>
-                            </div>
-                            <span className="perfil-data">Nov 2021 - Cursando</span>
-                        </div>
-                        <div className="perfil-education-description"></div>
-                    </div>
-                </div>
+
+                <ContentEducation 
+                    titulo={<>Universidade Federal do Maranhão</>} 
+                    curso={<>Bacharelado em Ciência e Tecnologia</>} 
+                    data={<>Mar 2017 - Out 2021</>} 
+                    descricao={<>No curso, construí bases de conhecimento para as engenharias em geral. Desenvolvi conhecimentos introdutórios a Engenharia da Computação, como Fundamentos e Lógica de Programação, Algoritmos, Banco de Dados, Sistemas Operacionais, Processos de Desenvolvimentos de Softwares e Metodologias Ágeis.</>} 
+                    iconTcc={iconMedal} 
+                    tccDescricao={<>Identificando e Disponibilizando Técnicas de Gamificação para o Ensino de Engenharia de Software</>} 
+                />
+
+                <ContentEducation 
+                    titulo={<>Universidade Federal do Maranhão</>} 
+                    curso={<>Bacharelado em Ciência e Tecnologia</>} 
+                    data={<>Nov 2021 - Cursando</>} 
+                    descricao={<></>} 
+                    iconTcc={iconMedal} 
+                    tccDescricao={<>Em construção</>}
+
+                />
             </div>
 
             <a href="https://doug-22.github.io/assets/assets/cv/cv_douglas_oliveira.pdf" target="_blank" rel="noreferrer" className="perfil-download-button"><FaEye className="perfil-icon-button"/>Ver Currículo</a>

@@ -27,6 +27,7 @@ const FeaturedProject = ({item}) => {
                     </div>
                     <div className="featured-buttons">
                         <a className="featured-watch-button" href={item.link} target="_blank" rel="noreferrer"><BsFillPlayFill className="featured-icon-button"/>Acessar</a>
+                        {/* eslint-disable-next-line */}
                         <a className="featured-moreinfo-button" onClick={() => setModalVisible(true)}><BsInfoCircle className="featured-icon-button"/> Mais Informações</a>
                         {modalVisible ? <Modal itemModal={item} onClose={() =>  setModalVisible(false)}/> : null}
                     </div>
