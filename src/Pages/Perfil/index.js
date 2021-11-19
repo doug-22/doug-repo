@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from "react";
 import {useLocation} from "react-router-dom"
-import { FaGithub, FaLinkedin, FaInstagram, FaRegEnvelope, FaMapMarkerAlt, FaFileDownload } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram, FaRegEnvelope, FaWhatsapp, FaMapMarkerAlt, FaEye } from "react-icons/fa"
 import "./style.css"
 
 import Header from "../../Components/Header"
 
-import logoPerfil from "../../Assets/perfil.png"
 import logoHtml from "../../Assets/logo-html5.png"
 import logoCss from "../../Assets/logo-css.png"
 import logoJs from "../../Assets/logo-js.png"
@@ -14,6 +13,7 @@ import logoTs from "../../Assets/logo-ts.png"
 import iconMedal from "../../Assets/medalha-de-ouro.png"
 import logoUNASUS from "../../Assets/logo_vertical.png"
 import logoUFMA from "../../Assets/ufma.png"
+import fotoPerfil from "../../Assets/foto-perfil.png"
 
 const Perfil = () => {
 
@@ -41,7 +41,7 @@ const Perfil = () => {
             <Header black={blackHeader} pageLocation={location.pathname}/>
 
             <div className="perfil-foto">
-                <img src={logoPerfil} alt="Perfil"/>
+                <img src={fotoPerfil} alt="Perfil"/>
                 <div>
                     <span>Oi, eu sou o</span>
                     <h1>Douglas</h1>
@@ -64,6 +64,7 @@ const Perfil = () => {
                 <a href="https://www.linkedin.com/in/douglas-oliveira-dev/" target="_blank" rel="noreferrer"><FaLinkedin className="perfil-contacts-linkedin"/></a>
                 <a href="mailto:douglas.aguiar410@gmail.com" target="_blank" rel="noreferrer"><FaRegEnvelope className="perfil-contacts-gmail"/></a>
                 <a href="https://www.instagram.com/d__oliveiraa/" target="_blank" rel="noreferrer"><FaInstagram className="perfil-contacts-instagram"/></a>
+                <a href="https://api.whatsapp.com/send?phone=5598984604334&text=Ol%C3%A1%20Douglas" target="_blank" rel="noreferrer"><FaWhatsapp className="perfil-contacts-whatsapp"/></a>
             </div>
 
             <div className="perfil-skills">
@@ -80,7 +81,7 @@ const Perfil = () => {
             <div className="perfil-experience">
                 <h2>Experiência</h2>
                 <div className="perfil-experience-div">
-                    <span className="perfil-data perfil-data-experience">Jan 2017 - Dez 2019</span>
+                    <span className="perfil-data perfil-data-experience">Jan 2018 - Dez 2019</span>
                     <FaMapMarkerAlt className="perfil-experience-ping"/>
                     <div>
                         <div className="perfil-titulo">Bolsista</div>
@@ -88,7 +89,7 @@ const Perfil = () => {
                             <img src={logoUFMA} alt="Logo UFMA" />
                             <span>UFMA</span>
                         </div>
-                        <div className="perfil-experience-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-experience-description">Responsável pela liquidação de despesas e despacho de documentos.</div>
                     </div>
                 </div>
                 <div className="perfil-experience-div">
@@ -100,7 +101,8 @@ const Perfil = () => {
                             <img src={logoUNASUS} alt="Logo UNASUS" />
                             <span>UNA-SUS</span>
                         </div>
-                        <div className="perfil-experience-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-experience-description">O Sistema Universidade Aberta do SUS (UNA-SUS) foi criado com o objetivo auxiliar na capacitação e educação dos profissionais que atuam no Sistema Único de Saúde (SUS). 
+                        Dentro da UNA-SUS atuo no desenvolvimento de recursos educacionais utilizando React, HTML, CSS e Javascript.</div>
                     </div>
                 </div>
             </div>
@@ -131,12 +133,12 @@ const Perfil = () => {
                             </div>
                             <span className="perfil-data">Nov 2021 - Cursando</span>
                         </div>
-                        <div className="perfil-education-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div className="perfil-education-description"></div>
                     </div>
                 </div>
             </div>
 
-            <a href="" target="_blank" rel="noreferrer" className="perfil-download-button"><FaFileDownload className="perfil-icon-button"/>Download Currículo</a>
+            <a href="https://doug-22.github.io/assets/assets/cv/cv_douglas_oliveira.pdf" target="_blank" rel="noreferrer" className="perfil-download-button"><FaEye className="perfil-icon-button"/>Ver Currículo</a>
 
             <footer>
                 Desenvolvido por Douglas Oliveira<br/>

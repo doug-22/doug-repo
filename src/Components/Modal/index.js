@@ -1,9 +1,7 @@
 import React from "react";
 import { BsFillPlayFill } from "react-icons/bs"
-import { FaGithub, FaFileDownload } from "react-icons/fa"
+import { FaGithub, FaEye } from "react-icons/fa"
 import "./style.css";
-
-import logo from "../../Assets/logo-css.png"
 
 const Modal = ({id = "modal", onClose = () => {}, itemModal}) => {
 
@@ -46,7 +44,7 @@ const Modal = ({id = "modal", onClose = () => {}, itemModal}) => {
                             <>
                                 <div className="modal-titulo" style={{color: "#fff"}}>{itemModal.titulo}</div>
                                 <div className="modal-button-acessar" style={{marginBottom: "15px"}}>
-                                    <a className="modal-button-link" href={itemModal.link} target="_blank" rel="noreferrer"><FaFileDownload className="modal-button-icon" />Download Certificado</a>
+                                    <a className="modal-button-link" href={itemModal.link} target="_blank" rel="noreferrer"><FaEye className="modal-button-icon" />Abrir Certificado</a>
                                 </div>
                             </>
                         }

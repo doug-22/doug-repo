@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import {useLocation} from "react-router-dom"
-import { FaGithub } from "react-icons/fa"
 import "./style.css"
 import Api from "../../api"
 
@@ -69,7 +68,7 @@ const Home = () => {
             </section>
 
             <footer>
-                Desenvolvido por <a href="https://github.com/doug-22" target="_blank" rel="noreferrer">Douglas Oliveira <FaGithub /></a><br/>
+                Desenvolvido por Douglas Oliveira<br/>
                 Layout baseado na Netflix<br/>
             </footer>
 

@@ -44,6 +44,7 @@ body{
 .perfil-foto img {
     width: 120px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 .perfil-foto div h1 {
@@ -153,7 +154,12 @@ body{
 }
 
 .perfil-experience-ping {
+    width: 10%;
     font-size: 30px;
+}
+
+.perfil-experience-div div {
+    width: 100%;
 }
 
 .perfil-experience-logo {
@@ -172,6 +178,10 @@ body{
 
 .perfil-experience-description {
     text-align: justify;
+}
+
+.perfil-data-experience {
+    width: 20%;
 }
 
 .perfil-education-div div{
@@ -284,9 +294,6 @@ footer a{
     }
     .perfil-titulo{
         font-size: 16px;
-    }
-    .perfil-experience-div div {
-        width: 85%;
     }
     .perfil-data-experience {
         width: 40%;
