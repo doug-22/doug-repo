@@ -37,3 +37,9 @@ footer a{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 750px) {
+    .lists{
+        margin-top: -210px;
+    }
+}
