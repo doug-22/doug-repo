@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import {useLocation} from "react-router-dom"
 import "./style.css"
 import Api from "../../api"
+import documentTitle from "../../Components/documentTitle"
 
 import ListRow from "../../Components/ListRow"
 import FeaturedProject from "../../Components/FeaturedProject"
@@ -30,8 +31,9 @@ const Home = () => {
 
 
         }
-
         loadApi();
+
+        documentTitle("| Home");
     }, []);
 
     useEffect(() => {
@@ -51,6 +53,7 @@ const Home = () => {
     }, []);
 
     let location = useLocation();
+    
 
     return (
         <div className="page">

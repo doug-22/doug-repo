@@ -2,10 +2,12 @@ import React from "react";
 import { MdOutlineHome, MdPersonOutline } from "react-icons/md";
 import { Link } from "react-router-dom"
 import "./style.css";
+import documentTitle from "../../Components/documentTitle"
 
 import Logo from "../../Assets/logo.png";
 
 const Main = () => {
+    documentTitle("");
     return (
         <div className="main-page">
             <div className="main-header">

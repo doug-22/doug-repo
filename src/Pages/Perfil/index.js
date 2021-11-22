@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {useLocation} from "react-router-dom"
 import { FaGithub, FaLinkedin, FaInstagram, FaRegEnvelope, FaWhatsapp, FaEye } from "react-icons/fa"
 import "./style.css"
+import documentTitle from "../../Components/documentTitle"
 
 import Header from "../../Components/Header"
 import ContentEducation from "../../Components/ContentEducation";
@@ -38,6 +39,7 @@ const Perfil = () => {
     }, []);
 
     let location = useLocation();
+    documentTitle("| Perfil");
     return (
         <div className="perfil-page">
             <Header black={blackHeader} pageLocation={location.pathname}/>
