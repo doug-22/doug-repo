@@ -53,14 +53,12 @@ const Perfil = () => {
             </div>
 
             <div className="perfil-about">
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since 
-                the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book. It has survived not only five centuries, 
-                but also the leap into electronic typesetting, remaining essentially unchanged. 
-                It was popularised in the 1960s with the release of Letraset sheets containing 
-                Lorem Ipsum passages, and more recently with desktop publishing software 
-                like Aldus PageMaker including versions of Lorem Ipsum.
+                Me chamo Douglas Oliveira, e aqui você vai encontrar um pouco sobre minha caminhada
+                dentro do universo da Tecnologia da Informação. Meu primeiro contato com os computadores foi
+                na adolescência, quando eu era o filho e sobrinho que sabia mexer nos aparelhos tecnologicos hahaha.
+                A curiosidade me levou a buscar tentar entender ainda mais como aqueles aparelhos tão temidos
+                pelos meus pais e tios funcionavam e como eram construídos. E toda essa curiosidade me trouxe até
+                aqui hoje.
             </div>
 
             <div className="perfil-contacts">
@@ -117,7 +115,7 @@ const Perfil = () => {
 
                 <ContentEducation 
                     titulo={<>Universidade Federal do Maranhão</>} 
-                    curso={<>Bacharelado em Ciência e Tecnologia</>} 
+                    curso={<>Bacharelado em Engenharia da Computação</>} 
                     data={<>Nov 2021 - Cursando</>} 
                     descricao={<></>} 
                     iconTcc={iconMedal} 
