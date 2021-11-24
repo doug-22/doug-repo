@@ -26,9 +26,15 @@ parecida com o que a Netflix apresenta adicionei as seguintes telas e funcionali
 * Uma tela "seleção do usuário" no qual é possível escolher entre ir para a tela Home com os projetos e 
 Certificados, ou Perfil com as minhas informações.
 <div align="center">
-  <img src="https://doug-22.github.io/assets/assets/projetos/capa-portfolio.png" width="70%" align="center" />
-  <img src="https://doug-22.github.io/assets/assets/projetos/capa-portfolio-2.png" width="70%" align="center" />
-  <img src="https://doug-22.github.io/assets/assets/projetos/perfil-portfolio.png" width="70%" align="center" />
+  <h4>Inicial</h4>
+  
+  <img src="https://doug-22.github.io/assets/assets/projetos/capa-portfolio.png" width="50%" align="center" />
+  
+  <div>
+    <h4>Home & Perfil</h4>
+    <img src="https://doug-22.github.io/assets/assets/projetos/capa-portfolio-2.png" width="40%" align="center" />
+    <img src="https://doug-22.github.io/assets/assets/projetos/perfil-portfolio.png" width="40%" align="center" />
+  </div>
 </div>
 <br />
 
