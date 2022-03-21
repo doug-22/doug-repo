@@ -15,7 +15,8 @@ import logoReact from "../../Assets/logo-react.png"
 import logoTs from "../../Assets/logo-ts.png"
 import iconMedal from "../../Assets/medalha-de-ouro.png"
 import logoUNASUS from "../../Assets/logo_vertical.png"
-import logoUFMA from "../../Assets/ufma.png"
+import logofreelance from "../../Assets/freelance.jpg"
+import logoAlema from "../../Assets/alema.jpg"
 import fotoPerfil from "../../Assets/foto-perfil.png"
 
 const Perfil = () => {
@@ -82,22 +83,44 @@ const Perfil = () => {
 
             <div className="perfil-experience">
                 <h2>Experiência</h2>
-
                 <ContentExperience 
-                    data={<>Jan 2018 - Dez 2019</>}
-                    titulo={<>Bolsista</>}
-                    logo={logoUFMA}
-                    instituicao={<>UFMA</>}
-                    descricao={<>Responsável pela liquidação de despesas e despacho de documentos.</>}
+                    data={<>Jun 2020 - Jan 2021</>}
+                    titulo={<>Desenvolvedor Front-End</>}
+                    logo={logofreelance}
+                    instituicao={<>Freelancer</>}
+                    descricao={
+                      <ul style={{padding: 0}}>
+                        <li>Desenvolvimento de sites utilizando Next Js, React JS, Typescript, Styled Components, SCSS/SASS;</li>
+                        <li>Componentização em React e Typescript;</li>
+                        <li>Criação e consumo de APIs;</li>
+                        <li>Manutenção de sites.</li>
+                      </ul>
+                    }
                 />
-
                 <ContentExperience 
-                    data={<>Jun 2021 - Até o momento</>}
+                    data={<>Jun 2021 - Jan 2022</>}
                     titulo={<>Desenvolvedor Front-End</>}
                     logo={logoUNASUS}
                     instituicao={<>UNA-SUS</>}
-                    descricao={<>O Sistema Universidade Aberta do SUS (UNA-SUS) foi criado com o objetivo auxiliar na capacitação e educação dos profissionais que atuam no Sistema Único de Saúde (SUS). 
-                        Dentro da UNA-SUS atuo no desenvolvimento de recursos educacionais utilizando React, HTML, CSS e Javascript.</>}
+                    descricao={
+                      <ul style={{padding: 0}}>
+                        <li>Desenvolvimento de e-books e infográficos interativos utilizando React JS;</li>
+                        <li>Desenolvimento de landing pages utilizando HTML, CSS e Javascript;</li>
+                        <li>Responsável pelo desenvolvimento do PPU (Pacote Padrão Una-Sus): criação e persistência de dados.</li>
+                      </ul>
+                      }
+                />
+                <ContentExperience 
+                    data={<>Jan 2022 - Até o momento</>}
+                    titulo={<>Desenvolvedor Front-End</>}
+                    logo={logoAlema}
+                    instituicao={<>Assembleia Legislativa do MA</>}
+                    descricao={
+                      <ul style={{padding: 0}}>
+                        <li>Responsável pela integração dos novos sistemas, preparando-os para produção e resolvendo possíveis conflitos usando SVN;</li>
+                        <li>Desenvolvimento de soluções em Javascript para melhorar o esempenho das aplicações.</li>
+                      </ul>
+                      }
                 />
             </div>
 
