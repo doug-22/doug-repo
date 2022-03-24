@@ -73,16 +73,20 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    gap: 20px
 }
 
-.perfil-skills-icons {
+.perfil-skills-icons-1, .perfil-skills-icons-2 {
     width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.perfil-skills-icons img{
+
+.perfil-skills-icons-1{padding-left: 100px;}
+.perfil-skills-icons-2{padding-right: 100px;}
+.perfil-skills-icons-1 img{
     width: 60px;
 
     transform: scale(0, 0);
@@ -93,21 +97,45 @@ body{
     animation-iteration-count: infinite;
 
 }
-.perfil-skills-icons img:nth-child(1) {
+
+.perfil-skills-icons-1 img:nth-child(1) {
     animation-delay: 1.2s;
 }
 
-.perfil-skills-icons img:nth-child(2) {
+.perfil-skills-icons-1 img:nth-child(2) {
     animation-delay: .8s;
 }
-.perfil-skills-icons img:nth-child(3) {
+.perfil-skills-icons-1 img:nth-child(3) {
     animation-delay: .6s;
 }
-.perfil-skills-icons img:nth-child(4) {
+.perfil-skills-icons-1 img:nth-child(4) {
     animation-delay: .4s;
 }
-.perfil-skills-icons img:nth-child(5) {
-    animation-delay: .2s;
+
+.perfil-skills-icons-2 img{
+    width: 60px;
+
+    transform: scale(0, 0);
+    
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+
+.perfil-skills-icons-2 img:nth-child(1) {
+    animation-delay: 1.6s;
+}
+
+.perfil-skills-icons-2 img:nth-child(2) {
+    animation-delay: 1.2s;
+}
+.perfil-skills-icons-2 img:nth-child(3) {
+    animation-delay: 1s;
+}
+.perfil-skills-icons-2 img:nth-child(4) {
+    animation-delay: .8s;
 }
 
 .perfil-experience, .perfil-education {
@@ -178,10 +206,10 @@ footer a{
     .perfil-contacts {
         width: 70%;
     }
-    .perfil-skills-icons {
+    .perfil-skills-icons-1 {
         width: 90%;
     }
-    .perfil-skills-icons img {
+    .perfil-skills-icons-1 img {
         width: 40px;
     }
     .perfil-experience, .perfil-education {

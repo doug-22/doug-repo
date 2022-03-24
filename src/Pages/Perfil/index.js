@@ -13,6 +13,9 @@ import logoCss from "../../Assets/logo-css.png"
 import logoJs from "../../Assets/logo-js.png"
 import logoReact from "../../Assets/logo-react.png"
 import logoTs from "../../Assets/logo-ts.png"
+import logoNext from "../../Assets/logo-nextjs.png"
+import logoSass from "../../Assets/sass-logo.png"
+import logoNode from "../../Assets/node-logo.png"
 import iconMedal from "../../Assets/medalha-de-ouro.png"
 import logoUNASUS from "../../Assets/logo_vertical.png"
 import logofreelance from "../../Assets/freelance.jpg"
@@ -54,12 +57,10 @@ const Perfil = () => {
             </div>
 
             <div className="perfil-about">
-                Me chamo Douglas Oliveira, e aqui você vai encontrar um pouco sobre minha caminhada
-                dentro do universo da Tecnologia da Informação. Meu primeiro contato com os computadores foi
-                na adolescência, quando eu era o filho e sobrinho que sabia mexer nos aparelhos tecnologicos hahaha.
-                A curiosidade me levou a buscar tentar entender ainda mais como aqueles aparelhos tão temidos
-                pelos meus pais e tios funcionavam e como eram construídos. E toda essa curiosidade me trouxe até
-                aqui hoje.
+                Sou Desenvolvedor com conhecimento voltado para tecnologias front-end e Javascript, 
+                possuo 2 anos de experiência divididos entre projetos freelancer e CLT. Sou Bacharel 
+                em Ciência e Tecnologia pela Universidade Federal do Maranhão e atualmente na mesma 
+                universidade estou cursando Engenharia da Computação.
             </div>
 
             <div className="perfil-contacts">
@@ -72,17 +73,47 @@ const Perfil = () => {
 
             <div className="perfil-skills">
                 <h2>Skills</h2>
-                <div className="perfil-skills-icons">
+                <div className="perfil-skills-icons-1">
                     <img src={logoHtml} alt="Logo HTML" className="perfil-skills-animation"/>
                     <img src={logoCss} alt="Logo CSS" className="perfil-skills-animation"/>
                     <img src={logoJs} alt="Logo JS" className="perfil-skills-animation"/>
                     <img src={logoReact} alt="Logo React" className="perfil-skills-animation"/>
+                </div>
+                <div className="perfil-skills-icons-2">
                     <img src={logoTs} alt="Logo TS" className="perfil-skills-animation"/>
+                    <img src={logoSass} alt="Logo Sass" className="perfil-skills-animation"/>
+                    <img src={logoNode} alt="Logo Node" className="perfil-skills-animation"/>
+                    <img src={logoNext} alt="Logo Next" className="perfil-skills-animation"/>
                 </div>
             </div>
 
             <div className="perfil-experience">
                 <h2>Experiência</h2>
+                <ContentExperience 
+                    data={<>Jan 2022 - Mar 2022</>}
+                    titulo={<>Programador I</>}
+                    logo={logoAlema}
+                    instituicao={<>Assembleia Legislativa do MA</>}
+                    descricao={
+                      <ul style={{padding: 0}}>
+                        <li>Responsável pela integração dos novos sistemas, preparando-os para produção e resolvendo possíveis conflitos usando SVN;</li>
+                        <li>Desenvolvimento de soluções em Javascript para melhorar o esempenho das aplicações.</li>
+                      </ul>
+                      }
+                />
+                <ContentExperience 
+                    data={<>Jun 2021 - Até o momento</>}
+                    titulo={<>Desenvolvedor Front-End</>}
+                    logo={logoUNASUS}
+                    instituicao={<>UNA-SUS</>}
+                    descricao={
+                      <ul style={{padding: 0}}>
+                        <li>Desenvolvimento de e-books e infográficos interativos utilizando React JS;</li>
+                        <li>Desenolvimento de landing pages utilizando HTML, CSS e Javascript;</li>
+                        <li>Responsável pelo desenvolvimento do PPU (Pacote Padrão Una-Sus): criação e persistência de dados.</li>
+                      </ul>
+                      }
+                />
                 <ContentExperience 
                     data={<>Jun 2020 - Jan 2021</>}
                     titulo={<>Desenvolvedor Front-End</>}
@@ -96,31 +127,6 @@ const Perfil = () => {
                         <li>Manutenção de sites.</li>
                       </ul>
                     }
-                />
-                <ContentExperience 
-                    data={<>Jun 2021 - Jan 2022</>}
-                    titulo={<>Desenvolvedor Front-End</>}
-                    logo={logoUNASUS}
-                    instituicao={<>UNA-SUS</>}
-                    descricao={
-                      <ul style={{padding: 0}}>
-                        <li>Desenvolvimento de e-books e infográficos interativos utilizando React JS;</li>
-                        <li>Desenolvimento de landing pages utilizando HTML, CSS e Javascript;</li>
-                        <li>Responsável pelo desenvolvimento do PPU (Pacote Padrão Una-Sus): criação e persistência de dados.</li>
-                      </ul>
-                      }
-                />
-                <ContentExperience 
-                    data={<>Jan 2022 - Até o momento</>}
-                    titulo={<>Desenvolvedor Front-End</>}
-                    logo={logoAlema}
-                    instituicao={<>Assembleia Legislativa do MA</>}
-                    descricao={
-                      <ul style={{padding: 0}}>
-                        <li>Responsável pela integração dos novos sistemas, preparando-os para produção e resolvendo possíveis conflitos usando SVN;</li>
-                        <li>Desenvolvimento de soluções em Javascript para melhorar o esempenho das aplicações.</li>
-                      </ul>
-                      }
                 />
             </div>
 
