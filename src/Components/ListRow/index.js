@@ -43,7 +43,7 @@ const ListRow = ({title, items}) => {
                     // numero 8 precisa ser subtituido por items.length para ficar dinâmica
                     width: 8 * 270
                 }}>
-                    {items.length > 0 && items.map((item, key) => (
+                    {items.data.length > 0 && items.data.map((item, key) => (
                         <ItemList key={key} item={item}/>
                     ))}
                 </div>

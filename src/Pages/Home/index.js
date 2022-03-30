@@ -13,20 +13,24 @@ const Home = () => {
     const [projectList, setProjectList] = useState([]);
     const [featuredData, setFeaturedData] = useState(null);
     const [blackHeader, setBlackHeader] = useState(false);
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
         const loadApi = async () => {
             //pega lista total
             let list = await Api.getHomeList();
-            // console.log(list);
             setProjectList(list);
 
-            //pega o destaque
             let projetos = list.filter(i=>i.title === "Projetos");
-            // console.log(projetos);
-            let randomChosen = Math.floor(Math.random() * (projetos[0].items.length - 1));
-            let chosen = projetos[0].items[randomChosen];
+            let countProject = projetos[0].items.meta.count;
+            setCount(countProject);
+
+            //pega o destaque
+            // let projetos = list.filter(i=>i.title === "Projetos");
+            let randomChosen = Math.floor(Math.random() * (countProject - 1));
+            let chosen = projetos[0].items.data[randomChosen];
             setFeaturedData(chosen);
+            
             //let chosenInfo = await Api.getProjectInfo(chosen._id, "projeto"); Precisar para modal
 
 
@@ -53,7 +57,6 @@ const Home = () => {
     }, []);
 
     let location = useLocation();
-    
 
     return (
         <div className="page">
@@ -75,7 +78,7 @@ const Home = () => {
                 Layout baseado na Netflix<br/>
             </footer>
 
-            {projectList.length <= 0 &&
+            {count <= 0 &&
                 <div className="loading">
                     <img src="https://www.rchandru.com/images/portfolio/loading.gif" alt="Carregando" width="100"/>
                 </div>
