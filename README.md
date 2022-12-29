@@ -1,7 +1,6 @@
 <p align="center">
   <h1 align="center">Meu Portfólio</h1>
 
-
 <p align="center">
     Bem-vindo ao meu portfólio pessoal personalizado!
     <br />
@@ -9,8 +8,9 @@
 </p>
 
 ## :book: Sobre o Projeto
-A ideia inicial era tornar a forma de apresentar meus projetos de uma forma mais intuitiva e divertida, 
-e qual a vitrine mais famosa que existe, é isso, a Netflix, e dai surgiu meu PortFlix. HAHAHA!
+
+A ideia inicial era tornar a forma de apresentar meus projetos de uma forma mais intuitiva e divertida,
+e qual a vitrine mais famosa que existe? a Netflix, e dai surgiu meu PortFlix.
 
 <div align="center">
   <img src="https://doug-22.github.io/assets/assets/projetos/capa-portfolio-2.png" width="70%" align="center" />
@@ -19,11 +19,10 @@ e qual a vitrine mais famosa que existe, é isso, a Netflix, e dai surgiu meu Po
 
 Você pode acessar a página do site [aqui](https://douglas-oliveira.vercel.app/)
 
-A Netflix foi minha inspiração e a referência foi o vídeo do Bonieky Lacerda no qual ele ensina 
-como criar um clone da página base da Netflix em React. Como uma forma de tornar a coisa ainda mais 
+Como uma forma de tornar a coisa ainda mais
 parecida com o que a Netflix apresenta adicionei as seguintes telas e funcionalidades:
 
-* Uma tela "seleção do usuário" no qual é possível escolher entre ir para a tela Home com os projetos e 
+- Uma tela "seleção do usuário" no qual é possível escolher entre ir para a tela Home com os projetos e
 Certificados, ou Perfil com as minhas informações.
 <div align="center">
   <h4>Inicial</h4>
@@ -38,15 +37,16 @@ Certificados, ou Perfil com as minhas informações.
 </div>
 <br />
 
-* Um modal para apresentação das informações individuais do projeto ou certificado que o usuário selecionar.
+- Um modal para apresentação das informações individuais do projeto ou certificado que o usuário selecionar.
 <div align="center">
   <img src="https://doug-22.github.io/assets/assets/projetos/modal-portfolio.png" width="70%" align="center" />
 </div>
 <br />
 
 ### :computer: Tecnologias
-* [React](https://reactjs.org)
-* [React Icons](https://react-icons.github.io/react-icons/)
 
-Os projetos e certificados apresentados no portfólio são obtidos a partir de uma API criada por mim mesmo 
+- [React](https://reactjs.org)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+Os projetos e certificados apresentados no portfólio são obtidos a partir de uma API criada por mim mesmo
 em [Node.JS](https://nodejs.org/en/), os mesmos são armazenadas no Banco de Dados [MongoDB](https://www.mongodb.com/pt-br).

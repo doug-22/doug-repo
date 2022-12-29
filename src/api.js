@@ -1,4 +1,4 @@
-const BASE_URL = "https://repositorio-api.herokuapp.com/";
+const BASE_URL = "https://repo-api.vercel.app/";
 
 const Api = async (endpoint) => {
     const req = await fetch(`${BASE_URL}${endpoint}`);
